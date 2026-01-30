@@ -1,0 +1,15 @@
+{
+  "name": "apple-pay-verification-saas",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:public": "npm run dev --workspace=apps/public-site",
+    "dev:portal": "npm run dev --workspace=apps/merchant-portal-ui",
+    "dev:worker": "npm run dev --workspace=apps/control-plane",
+    "build": "npm run build --workspaces",
+    "deploy": "npm run build --workspace=apps/merchant-portal-ui && npm run deploy --workspace=apps/control-plane"
+  }
+}

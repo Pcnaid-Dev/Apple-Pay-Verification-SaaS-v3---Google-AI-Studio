@@ -1,0 +1,5 @@
+{
+  "name": "Apple Pay Verification SaaS",
+  "description": "A complete suite for enabling Apple Pay verification on Shopify stores via Cloudflare for SaaS.",
+  "requestFramePermissions": []
+}
